@@ -3,8 +3,13 @@ from firebase_admin import firestore
 from firebase_admin import messaging
 from firebase_admin import credentials
 import time
+import os
 
-cred = credentials.Certificate('cornfield-f722a.json')
+cred_file = 'cornfield-f722a.json'
+if 'RENDER' in os.environ:
+    cred_file = '/etc/secrets/cornfield-f722a.json'
+
+cred = credentials.Certificate(cred_file)
 firebase_admin.initialize_app(cred)
 
 # # Initialize Firestore

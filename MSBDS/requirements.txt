@@ -15,6 +15,7 @@ django-ajax-selects==2.2.0
 django-chartjs==2.3.0
 django-crispy-bootstrap==0.1.1.1
 django-datetimepicker==3.14
+django-cors-headers==4.3.1
 executing==1.2.0
 fastjsonschema==2.16.3
 firebase-admin==6.5.0
@@ -57,7 +58,7 @@ python-decouple==3.8
 python-dotenv==1.0.0
 python-json-logger==2.0.7
 pytz==2023.3
-
+openai
 PyYAML==6.0
 pyzmq==25.0.2
 requests==2.32.3
